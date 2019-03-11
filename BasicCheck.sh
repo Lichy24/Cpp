@@ -39,7 +39,7 @@ if [ $res -eq 0 ]; then memoryLeak="PASS"
 else sum=2
 fi
 #Check for any thread error in given application as '$2' and application arguments starts from the $3.
-valgrind --tool=helgrind ./$2 ${@:3}.
+valgrind --tool=helgrind --error-exitcode=1 ./$2 ${@:3}
 #Check for no errors from helgrind.
 #Note non-zero number is an error
 res=$?
