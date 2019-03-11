@@ -4,6 +4,7 @@
 memoryLeak="FAIL"
 compliation="FAIL"
 threadRace="FAIL"
+currentlocation=pwd
 sum=7
 #Go to the given path.
 #check if path contains file
@@ -50,4 +51,4 @@ fi
 echo -e "Compliation \t\t Memory leaks \t\t thread race\n  ${compliation} \t\t\t  ${memoryLeak} \t\t\t  ${threadRace}\nCode summary:  ${sum}"
 #Return status code
 exit $sum
-cd $HOME
+cd $currentlocation
