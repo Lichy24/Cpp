@@ -48,6 +48,7 @@ else sum=$(($sum + 1))
 fi
 fi
 #Print out the results
+echo "BasicCheck.sh ${@}"
 echo -e "Compliation \t\t Memory leaks \t\t thread race\n  ${compliation} \t\t\t  ${memoryLeak} \t\t\t  ${threadRace}\nCode summary:  ${sum}"
 #Return status code
 exit $sum
